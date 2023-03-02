@@ -4,7 +4,7 @@ import Card from "../ui/Card";
 
 const Expenses = (props) => {
   return (
-    <Card className="p-4 bg-gradient-to-tr from-[#46496b] via-[#9fadc5] to-[#edf2f4] my-16 mx-auto w-5/6 max-w-6xl  ">
+    <Card className="p-4 bg-gradient-to-tr shadow-xl from-[#46496b] via-[#9fadc5] to-[#edf2f4] my-16 mx-auto w-5/6 max-w-6xl  ">
       <ExpenseItem
         title={props.items[0].title}
         amount={props.items[0].amount}
