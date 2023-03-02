@@ -11,9 +11,20 @@ html {
 }
 
 body {
-  @apply m-0 h-screen bg-gradient-to-tr from-[#2b2d42] via-[#8d99ae] to-[#edf2f4];
+  @apply m-0 h-full bg-gradient-to-tr from-[#2b2d42] via-[#8d99ae] to-[#edf2f4];
 }
 
 div {
   text-align: center;
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
