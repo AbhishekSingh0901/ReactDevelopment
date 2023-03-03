@@ -1,29 +1,45 @@
 import React, { useState } from "react";
 
 const ExpenseForm = () => {
-  const [, setTitle] = useState("");
-  const [, setEnteredAmount] = useState("");
-  const [, setEnteredDate] = useState("");
+  const [enteredtitle, setEnteredTitle] = useState("");
+  const [enteredAmount, setEnteredAmount] = useState("");
+  const [enteredDate, setEnteredDate] = useState("");
   const titleChangeHandler = (event) => {
-    console.log(event.target.value);
-    setTitle(event.target.value);
+    // console.log(event.target.value);
+    setEnteredTitle(event.target.value);
   };
   const amountChangeHandler = (event) => {
-    console.log(event.target.value);
+    // console.log(event.target.value);
     setEnteredAmount(event.target.value);
   };
   const DateChangeHandler = (event) => {
-    console.log(event.target.value);
+    // console.log(event.target.value);
     setEnteredDate(event.target.value);
   };
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+
+    const expenseData = {
+      title: enteredtitle,
+      amount: enteredAmount,
+      date: new Date(enteredDate),
+    };
+    console.log(expenseData);
+    setEnteredTitle("");
+    setEnteredAmount("");
+    setEnteredDate("");
+  };
+
   return (
-    <form>
+    <form onSubmit={submitHandler}>
       <div className=" grid grid-cols-2 gap-2 mb-4 mx-4 md:mx-10 items-right">
         <div>
           <lable className="font-bold block my-2 text-left">Title</lable>
           <input
             className="font-inherit p-2 rounded-md w-full"
             type="text"
+            value={enteredtitle}
             onChange={titleChangeHandler}
           />
         </div>
@@ -32,8 +48,9 @@ const ExpenseForm = () => {
           <input
             className="font-inherit p-2 rounded-md w-full"
             type="number"
-            min="0.01"
+            min="1"
             max="100000"
+            value={enteredAmount}
             onChange={amountChangeHandler}
           />
         </div>
@@ -44,6 +61,7 @@ const ExpenseForm = () => {
             type="date"
             min="2018-01-01"
             max="2023-12-31"
+            value={enteredDate}
             onChange={DateChangeHandler}
           />
         </div>
