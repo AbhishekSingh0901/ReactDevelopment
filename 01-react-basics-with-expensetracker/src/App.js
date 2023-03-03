@@ -24,9 +24,14 @@ const App = () => {
       date: new Date(),
     },
   ];
+
+  const addExpenseHandeler = (expense) => {
+    console.log(`in App js`);
+    console.log(expense);
+  };
   return (
     <div className="flex flex-col h-screen">
-      <NewExpense />
+      <NewExpense onAddExpenseData={addExpenseHandeler} />
       <Expenses items={expenses} />
     </div>
   );
