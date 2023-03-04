@@ -22,7 +22,7 @@ const ExpenseForm = (props) => {
 
     const expenseData = {
       title: enteredtitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       date: new Date(enteredDate),
     };
 
@@ -72,6 +72,12 @@ const ExpenseForm = (props) => {
             className="bg-zinc-600 w-full px-8 py-2 text-white rounded-lg border-2 border-gray-500 shadow-lg hover:opacity-60"
           >
             Add
+          </button>
+          <button
+            onClick={props.onCancel}
+            className="absolute top-2 right-3 font-bold text-2xl text-gray-900"
+          >
+            &#8855;
           </button>
         </div>
       </div>
