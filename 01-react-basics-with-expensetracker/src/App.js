@@ -7,9 +7,9 @@ const DUMMY_EXPENSES = [
     id: "e1",
     title: "Toilet Paper",
     amount: 94.12,
-    date: new Date(2020, 7, 14),
+    date: new Date(2022, 7, 14),
   },
-  { id: "e2", title: "New TV", amount: 799.49, date: new Date(2021, 2, 12) },
+  { id: "e2", title: "New TV", amount: 799.49, date: new Date(2023, 2, 12) },
   {
     id: "e3",
     title: "Car Insurance",
@@ -20,7 +20,55 @@ const DUMMY_EXPENSES = [
     id: "e4",
     title: "New Desk (Wooden)",
     amount: 450,
-    date: new Date(),
+    date: new Date(2021, 4, 3),
+  },
+  {
+    id: "e5",
+    title: "New Desk (Wooden)",
+    amount: 450,
+    date: new Date(2022, 4, 3),
+  },
+  {
+    id: "e6",
+    title: "New Desk (Wooden)",
+    amount: 450,
+    date: new Date(2019, 4, 3),
+  },
+  {
+    id: "e7",
+    title: "New Desk (Wooden)",
+    amount: 450,
+    date: new Date(2023, 5, 3),
+  },
+  {
+    id: "e8",
+    title: "New chair",
+    amount: 450,
+    date: new Date(2023, 5, 3),
+  },
+  {
+    id: "e9",
+    title: "New books",
+    amount: 450,
+    date: new Date(2023, 9, 3),
+  },
+  {
+    id: "e9",
+    title: "New books",
+    amount: 450,
+    date: new Date(2023, 9, 3),
+  },
+  {
+    id: "e9",
+    title: "New books",
+    amount: 450,
+    date: new Date(2023, 9, 3),
+  },
+  {
+    id: "e9",
+    title: "New books",
+    amount: 450,
+    date: new Date(2023, 9, 3),
   },
 ];
 
