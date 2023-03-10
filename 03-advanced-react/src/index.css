@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100;
+}
+nav a:hover {
+  @apply text-green-800;
+}
+
+nav li {
+  @apply m-0 md:ml-8 ml-4 md:text-xl font-medium;
+}
+
+.control {
+  @apply m-4 mt-8 flex items-stretch flex-col;
+}
+
+.control label,
+.control input {
+  @apply block;
+}
+
+.control label {
+  @apply font-bold flex-1 text-gray-600 mb-2;
+}
+
+.control input {
+  @apply p-1 rounded-md border border-gray-400;
+}
+
+.control input:focus {
+  @apply outline-none border border-teal-500 bg-teal-100;
+}
+
+.control.invalid input {
+  @apply bg-red-100 border-red-500;
+}
