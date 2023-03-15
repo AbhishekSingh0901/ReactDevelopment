@@ -37,3 +37,8 @@ nav li {
 .control.invalid input {
   @apply bg-red-100 border-red-500;
 }
+
+button:disabled,
+button:hover:disabled {
+  @apply bg-slate-500 text-gray-800 cursor-not-allowed;
+}
