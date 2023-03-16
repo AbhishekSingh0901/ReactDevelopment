@@ -2,7 +2,7 @@ import React from "react";
 
 const Button = (props) => {
   const classes =
-    "bg-gradient-to-tr from-teal-300 to-teal-500 text-gray-500 px-6 py-1 rounded-lg shadow-sm hover:opacity-70 hover:shadow-lg " +
+    "bg-gradient-to-tr from-teal-300 to-teal-500 text-gray-600 px-6 py-1 rounded-lg shadow-sm hover:opacity-70 hover:shadow-lg " +
     props.className;
   return (
     <button
