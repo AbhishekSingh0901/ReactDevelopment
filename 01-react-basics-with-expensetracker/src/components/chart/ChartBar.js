@@ -8,9 +8,9 @@ const ChartBar = (props) => {
   }
   return (
     <div className="h-full flex flex-col items-center">
-      <div className="flex flex-col h-full  border border-bg-[#edf6f9] w-5 rounded-xl bg-[#145249] overflow-hidden justify-end">
+      <div className="flex flex-col h-full  border border-bg-[#edf6f9] w-5 bg-gray-300 overflow-hidden justify-end">
         <div
-          style={{ height: barfillHeight, backgroundColor: "#fefadc" }}
+          style={{ height: barfillHeight, backgroundColor: "#616161" }}
           className="w-full transform transition-all ease-in duration-200"
         ></div>
       </div>

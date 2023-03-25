@@ -10,7 +10,7 @@ const ExpenseItem = (props) => {
   //   console.log(title);
   // };
   return (
-    <Card className="flex justify-between items-center p-2 md:m-4 my-4 bg-[#fefadc] rounded-xl">
+    <Card className="flex justify-between items-center p-2 md:m-4 my-4 bg-white shadow-md">
       <ExpenseDate date={props.date} />
       <div className="flex flex-col-reverse gap-1 items-end justify-start md:flex-row md:items-center md:justify-start md:flex-1">
         <h2 className=" text-gray-900 text-sm flex-1 md:mx-4 mx-1 md:text-2xl text-right md:text-center">
@@ -18,9 +18,9 @@ const ExpenseItem = (props) => {
         </h2>
         <div
           type="button"
-          className="bg-zinc-700 text-gray-50 font-bold p-2 text-base rounded-lg border-2 border-white md:text-xl md:py-2 md:px-6 hover:cursor-pointer"
+          className=" text-gray-700 border-2 border-teal-500 mr-2 font-bold p-2 text-base md:text-xl md:py-2 md:px-6 hover:cursor-pointer"
         >
-          {props.amount} RUP
+          ₹{props.amount}
         </div>
       </div>
       {/* <button
