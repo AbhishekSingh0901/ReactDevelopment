@@ -4,7 +4,7 @@ const ChartBar = (props) => {
   let barfillHeight = "0%";
   if (props.max > 0) {
     barfillHeight = Math.round((props.value / props.max) * 100) + "%";
-    console.log(barfillHeight);
+    // console.log(barfillHeight);
   }
   return (
     <div className="h-full flex flex-col items-center">

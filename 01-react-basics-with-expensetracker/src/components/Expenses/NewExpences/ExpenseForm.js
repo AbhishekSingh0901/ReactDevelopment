@@ -36,7 +36,7 @@ const ExpenseForm = (props) => {
     <form onSubmit={submitHandler}>
       <div className=" grid grid-cols-2 gap-2 mb-4 mx-4 md:mx-10 items-right">
         <div>
-          <lable className="font-bold block my-2 text-left">Title</lable>
+          <label className="font-bold block my-2 text-left">Title</label>
           <input
             className="font-inherit p-2 rounded-md w-full"
             type="text"
@@ -45,7 +45,7 @@ const ExpenseForm = (props) => {
           />
         </div>
         <div>
-          <lable className="font-bold block my-2 text-left">Amount</lable>
+          <label className="font-bold block my-2 text-left">Amount</label>
           <input
             className="font-inherit p-2 rounded-md w-full"
             type="number"
@@ -56,7 +56,7 @@ const ExpenseForm = (props) => {
           />
         </div>
         <div>
-          <lable className="font-bold block my-2 text-left">Date</lable>
+          <label className="font-bold block my-2 text-left">Date</label>
           <input
             className="font-inherit p-2 rounded-md w-full"
             type="date"
