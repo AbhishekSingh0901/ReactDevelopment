@@ -1,9 +1,15 @@
-import React from "react";
+import React from "react"
 
 const Button = (props) => {
+  const isDisabled = props.disabled
   const classes =
-    "bg-gradient-to-tr from-teal-300 to-teal-500 text-gray-600 px-6 py-1 rounded-lg shadow-sm hover:opacity-70 hover:shadow-lg " +
-    props.className;
+    `${
+      isDisabled
+        ? "bg-gray-100"
+        : "bg-gradient-to-tr from-teal-300 to-teal-500 text-gray-600"
+    } 
+     px-6 py-1 rounded-lg shadow-sm hover:opacity-70 hover:shadow-lg` +
+    props.className
   return (
     <button
       type={props.type || "button"}
@@ -13,7 +19,7 @@ const Button = (props) => {
     >
       {props.children}
     </button>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button
