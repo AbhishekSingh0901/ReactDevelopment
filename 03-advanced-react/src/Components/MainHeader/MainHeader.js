@@ -1,5 +1,5 @@
-import React from "react";
-import Navigation from "./Navigation";
+import React from "react"
+import Navigation from "./Navigation"
 
 const MainHeader = (props) => {
   return (
@@ -7,12 +7,9 @@ const MainHeader = (props) => {
       <h1 className="font-bold font-sans  uppercase md:text-4xl text-2xl bg-gradient-to-r from-zinc-800 to-zinc-600 text-transparent bg-clip-text cursor-pointer">
         path to success!
       </h1>
-      <Navigation
-        isLoggedIn={props.isAuthenticated}
-        onLogout={props.onLogout}
-      />
+      <Navigation />
     </header>
-  );
-};
+  )
+}
 
-export default MainHeader;
+export default MainHeader

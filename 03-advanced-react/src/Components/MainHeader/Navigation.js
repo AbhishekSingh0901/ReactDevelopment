@@ -1,25 +1,27 @@
-import React from "react";
-import Button from "../UI/Button/Button";
+import React, { useContext } from "react"
+import Button from "../UI/Button/Button"
+import AuthContext from "../../store/auth-context"
 
-const Navigation = (props) => {
+const Navigation = () => {
+  const ctx = useContext(AuthContext)
   return (
     <nav>
       <ul className="list-none m-0 p-0 flex items-center text-teal-600">
-        {props.isLoggedIn && (
+        {ctx.isLoggedIn && (
           <li>
             <a href="/">Users</a>
           </li>
         )}
-        {props.isLoggedIn && (
+        {ctx.isLoggedIn && (
           <li>
             <a href="/">Admin</a>
           </li>
         )}
-        {props.isLoggedIn && (
+        {ctx.isLoggedIn && (
           <li>
             <Button
               className="bg-gradient-to-tr from-teal-300 to-teal-500 text-gray-500 px-6 py-1 rounded-lg shadow-sm hover:opacity-70 hover:shadow-lg"
-              onClick={props.onLogout}
+              onClick={ctx.onLogout}
             >
               LogOut
             </Button>
@@ -27,7 +29,7 @@ const Navigation = (props) => {
         )}
       </ul>
     </nav>
-  );
-};
+  )
+}
 
-export default Navigation;
+export default Navigation
