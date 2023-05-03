@@ -1,12 +1,13 @@
 .meals {
-  max-width: 60rem;
+  max-width: 70rem;
   width: 90%;
-  margin: 2rem auto;
+  margin: 3rem auto;
   animation: meals-appear 1s ease-out forwards;
 }
 
 .meals ul {
   list-style: none;
+  color: white;
   margin: 0;
   padding: 0;
 }

@@ -1,12 +1,13 @@
 .summary {
   text-align: center;
-  max-width: 45rem;
+  max-width: 70rem;
   width: 90%;
   margin: auto;
-  margin-top: -10rem;
+  margin-top: -21rem;
   position: relative;
-  background-color: #2b2f35;
-  color: #d7dee4;
+  background-color: transparent;
+  backdrop-filter: blur(70px);
+  color: #d1e2e9;
   border-radius: 14px;
   padding: 1rem;
   box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
@@ -15,4 +16,9 @@
 .summary h2 {
   font-size: 2rem;
   margin-top: 0;
+}
+
+.summary p {
+  font-size: 1.1rem;
+  font-weight: 500;
 }
