@@ -9,8 +9,12 @@ const Cart = (props) => {
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`
   const hasItem = cartCtx.items.length > 0
 
-  const cartItemRemoveHandeler = (id) => {}
-  const cartItemAddHandeler = (item) => {}
+  const cartItemRemoveHandeler = (id) => {
+    cartCtx.removeItem(id)
+  }
+  const cartItemAddHandeler = (item) => {
+    cartCtx.addItem({ ...item, amount: 1 })
+  }
 
   const cartItems = cartCtx.items.map((item) => {
     return (
